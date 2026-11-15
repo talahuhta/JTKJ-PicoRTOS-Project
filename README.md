@@ -5,19 +5,7 @@ RTOS pico morse code project
 ## EVERYTHING MUST BE DONE 3 DAYS BEFORE NOVEMBER 22nd
 To/do:
 - Email about project plan
-- begin writing code
 - Write this week's diary (and check if there was meant to be one last week)
-- Install VM and get pico running (Taneli) (this weekend)
-
-Coding Tasks:
-- Clean up main.c
-- Write very basic program in the sending task to print imu data to serial when button 2 is pressed (start function to retrieve imu data)
-  - button 2 is pressed -> return IMU data
-- Next step: upgrade the sending task to print the symbol the IMU handler returns
-   - button 2 is pressed down (rising edge 0 -> 1) -> begins measuring IMU data
-   - movement detected -> function return symbol and breaks loop
-   - button 2 being let get go (falling edge 1 -> 0) -> breaks loop (doesn't return anything)
-   - sending task code will print the returned value to serial
 
 ## General Project Plan
 ### Input (Pico)
