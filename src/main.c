@@ -11,10 +11,28 @@
 
 #include "tkjhat/sdk.h"
 
-/*
-Pico Morse Code Project
-Creators: Taneli Alahuhta, Sam Zahkarov, Aman Deep
-*/
+/* 
+ Pico Morse Code Project 
+ Creators: Taneli Alahuhta, Sam Zahkarov, Aman Deep 
+ 
+ Member Contributions:
+ - Taneli Alahuhta: Project planning, implemented main initializations, button interrupts, FreeRTOS tasks (sending, imu), created helper function (translate_morse, blink led, song, clear_buffers) 
+  configured IMU data handling.
+ - Sam Zahkarov: [Describe their contribution, e.g., project planning, design, etc.]
+ - Aman Deep: [Describe their contribution, e.g., project planning, design, etc.]
+ 
+ AI Usage Declaration:
+ Generative AI was used to assist with specific parts of this project:
+ 
+ 1. IMU Data Math: AI was used to help create code to handle the mathematics of calculating linear movement from the IMU.
+    - https://share.google/aimode/zkAy0dUN0WANw8fvL
+    - Modifications made: Adopted the provided mathematical logic to calculate roll, pitch, and gravity vectors inside the `imu_task`.
+    - Used provided math to better understand how it works
+ 2. Buzzer Song: AI was used to generate the frequencies and note array for the success tune.
+ 3. README organization (more info in REAMDE)
+ 
+ All other C code, logic, and task implementations were written manually.
+ */
 
 // Default stack size for the tasks. It can be reduced to 1024 if task is not using lot of memory.
 #define DEFAULT_STACK_SIZE 2048
