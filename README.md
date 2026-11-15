@@ -146,9 +146,9 @@ The goal of this project is to develop a Morse code messaging system utilizing a
 - Returning device
 
 ## AI Usage Declaration
-All project planning, code structure, state machine, C code and FreeRTOS task implementations in this project were written entirely by the group memebers unless otherwise specified. 
+All project planning, code structure, state machine, C code and FreeRTOS task implementations in this project were written entirely by the group memebers other than what is specified in main.c. 
 
-Generative AI (Google Gemini) was used solely to assist with project documentation. Specifically, it was used to format and expand the `## Code Structure` section of this README to clearly reflect the written C code. 
+Generative AI (Google Gemini) was used to assist with project documentation. Specifically, it was used to format and expand the `## Code Structure` section of this README to clearly reflect the written C code. 
 * **Prompts used:** "can you just update this code structure part of the readme to reflect the changes seen in main... try to keep it mostly the same and same level of depth", followed by "can you format this into git".
 * **Modifications made:** The AI's markdown output was copied into the README to organize the technical documentation of the existing code architecture.
 https://share.gemini.google/MX6c5LDNp8k1
