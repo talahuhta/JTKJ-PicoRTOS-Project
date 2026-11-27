@@ -11,30 +11,6 @@ The goal of this project is to develop a Morse code messaging system utilizing a
 - Prepare for interview
 - Draw new state machine
 - Finish writing weekly diaries !!!!
-- Upload project !!!!
-
-### 1. Implement Workstation to Pico Receiving (Tier 2 Requirement)
-* **Goal:** Enable the Pico to receive and interpret incoming Morse code from the workstation.
-* **Task:** Modify the currently looping `reading_task` (which handles the `READING` state) to actively read incoming USB serial data.
-* **Task:** Parse the incoming data string.
-* **Task:** Display the received symbols sequentially on the LCD screen and reflect them on the RGB LED.
-* **Task:** Map Button 2 to act as a scroll mechanism to manually step through the received symbols.
-
-### 2. Fix the Morse Code Formatting to Match Course Guidelines
-* **Goal:** Ensure all messages sent to the workstation adhere strictly to the course's required Morse protocol.
-* **Task:** Update the output logic in the `LISTENING` state (`imu_task`). Currently, the system prints `| |` for spaces. 
-* **Task:** Change the output so that:
-  * Characters are separated by a single space (` `).
-  * Words are separated by two spaces (`  `).
-  * The final message ends with exactly two spaces followed by a newline (`\n`).
-
-### 4. Course Administration & Final Deliverables
-* **Goal:** Ensure all grading criteria are met prior to the final meeting.
-* **Task:** Update the main `main.c` file header with comments detailing the names of all group members and explicitly stating what each person contributed to the project (e.g., "Aman did task1, Taneli did task2").
-* **Task:** Ensure every group member writes at least one personal diary entry per week. 
-* **Task:** Schedule and prepare for the final evaluation meeting (all members must be present and capable of answering questions about the implementation).
-- Email about project plan
-- Write this week's diary (and check if there was meant to be one last week)
 
 # General Project Plan
 ## Input (Pico)
