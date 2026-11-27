@@ -7,6 +7,11 @@ The goal of this project is to develop a Morse code messaging system utilizing a
 ---
 
 ## To-Do List
+- Final meeting as a group
+- Prepare for interview
+- Draw new state machine
+- Finish writing weekly diaries !!!!
+- Upload project !!!!
 
 ### 1. Implement Workstation to Pico Receiving (Tier 2 Requirement)
 * **Goal:** Enable the Pico to receive and interpret incoming Morse code from the workstation.
