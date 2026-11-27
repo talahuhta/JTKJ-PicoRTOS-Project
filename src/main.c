@@ -17,9 +17,8 @@
  Member Contributions:
  - Taneli Alahuhta: Project planning, implemented main initializations, button interrupts, FreeRTOS tasks (sending, imu), created helper function (translate_morse, blink led, song, clear_buffers) 
   configured IMU data handling.
- - Sam Zahkarov: [Describe their contribution, e.g., project planning, design, etc.]
- - Aman Deep: [Describe their contribution, e.g., project planning, design, etc.]
- 
+- Sam Zahkarov: Project planning, optimized the FreeRTOS task structure and memory usage, secured interrupt and state handling, streamlined IMU and display logic, and fixed buffer and screen bugs.
+- Aman Deep: Project planning, mainly implemented the reading task section including USB serial buffer reading, Pico LCD display updates, buzzer alerts, and RGB LED blinks. Added empty/no-message handling from the workstation, protocol ending checks, and buffer clearing/overflow fixes. 
  AI Usage Declaration:
  Generative AI was used to assist with specific parts of this project:
  
@@ -28,6 +27,7 @@
     - Modifications made: Adopted the provided mathematical logic to calculate roll, pitch, and gravity vectors inside the `imu_task`.
     - Used provided math to better understand how it works
  2. Buzzer Song: AI was used to generate the frequencies and note array for the success tune.
+ 3. Used to simulate the pico display since I did not have access to the physical device and had difficulties getting the provided simulation to run. - Aman 
  3. README organization (more info in REAMDE)
  
  All other C code, logic, and task implementations were written manually.
